@@ -6,7 +6,7 @@ package proyectopoofin;
 
 /**
  *
- * @author alvar
+ * @author Geraldine Acosta
  */
 public class ProyectoPooFin {
 
