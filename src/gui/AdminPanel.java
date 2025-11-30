@@ -204,11 +204,15 @@ public class AdminPanel extends javax.swing.JFrame {
     }//GEN-LAST:event_b1ActionPerformed
 
     private void b2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b2ActionPerformed
-        
+        ReportesPanel rep = new ReportesPanel(ctrlVehiculos, ctrlVentas, ctrlEmpleados);
+        rep.setVisible(true);
+        rep.setLocationRelativeTo(null);
     }//GEN-LAST:event_b2ActionPerformed
 
     private void b3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b3ActionPerformed
-
+        GestionarPromocionesPanel prom = new GestionarPromocionesPanel(ctrlPromociones);
+        prom.setVisible(true);
+        prom.setLocationRelativeTo(null);
     }//GEN-LAST:event_b3ActionPerformed
 
     private void b4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b4ActionPerformed
