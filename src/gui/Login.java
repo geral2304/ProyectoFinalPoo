@@ -144,10 +144,15 @@ public class Login extends javax.swing.JFrame {
         Empleado empleado = login.autenticar(usuario, password);
 
         AdminPanel admi = new AdminPanel(login, ctrlEmpleados, ctrlClientes, ctrlVehiculos, ctrlCotizaciones, ctrlVentas, ctrlPagos, ctrlPromociones);
+        VendedorPanel vend = new VendedorPanel(login, empleado, ctrlEmpleados, ctrlClientes, ctrlVehiculos, ctrlCotizaciones, ctrlVentas, ctrlPagos, ctrlPromociones);
 
         if (empleado.getRolEmpleado().equals(RolEmpleado.ADMINISTRADOR)) {
             admi.setVisible(true);
             admi.setLocationRelativeTo(null);
+            this.dispose();
+        } else if (empleado.getRolEmpleado().equals(RolEmpleado.VENDEDOR)) {
+            vend.setVisible(true);
+            vend.setLocationRelativeTo(null);
             this.dispose();
         }
     }//GEN-LAST:event_loginButtonActionPerformed
